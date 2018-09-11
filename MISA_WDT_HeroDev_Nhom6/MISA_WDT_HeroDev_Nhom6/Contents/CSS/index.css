@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Tahoma;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+/*-------------------------MENU TOP------------------------------*/
+.menu-top {
+    position: absolute !important;
+    margin: 0px;
+    width: 1366px;
+    right: auto;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+}
+/*-------------------------MENU LEFT------------------------------*/
+.menu-left {
+    position: absolute !important;
+    width: 230px;
+    margin: 0px;
+    right: auto;
+    left: 0px;
+    top: 50px;
+    height: 201px;
+}
+/*-------------------------CONTENT RIGHT------------------------------*/
+.content-right {
+    position: absolute !important;
+    margin: 0px;
+    width: 1136px;
+    right: auto;
+    left: 230px;
+    top: 50px;
+    height: 201px;
+}
