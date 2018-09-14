@@ -256,7 +256,6 @@
     font-size: 13px;
     font-family: Helvetica,Tahoma,Arial,sans-serif !important;
     color: #1d2129;
-    /*display: table-cell;*/
     height: 100%;
     vertical-align: top;
 }
@@ -290,4 +289,86 @@
     text-align: center;
     color: #fff;
     cursor: pointer;
+}
+.pa-flex{
+    -webkit-flex: 1;
+    flex: 1;
+}
+.pa-col-common {
+    width: 800px;
+}
+.pa-col2 {
+    width: 110px;
+    line-height: 32px;
+    padding-left: 0;
+}
+.pa-lbl-require {
+    color: red;
+}
+.pa-left-content{
+    padding-left:0;
+}
+.pa-right-content {
+    border-width: 1px 0 0 0;
+    padding-left: 20px;
+}
+.pa-form-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border-color: #d9d9d9 !important;
+    border-width: 1px;
+    border-style: solid;
+}
+.pa-form-item input{
+    font-size: 13px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif!important;
+    color: #1d2129;
+    height: 100%!important;
+    padding: 0 6px;
+    min-height: 28px;
+    width: 100%;
+    border: none;
+}
+.pa-form-trigger {
+    width: 30px;
+    height: 28px;
+    display: table-cell;
+    vertical-align: top;
+    cursor: pointer;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 0;
+    white-space: nowrap;
+}
+.pa-cbo-trigger {
+    background-image: url('../Images/Trigger/cbo-trigger.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -30px;
+    margin-right: 2px;
+}
+.pa-date-trigger {
+    background-image: url('../Images/Trigger/date-trigger.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -30px;
+}
+.pa-more-trigger {
+    background-image: url('../Images/Trigger/more.png') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -29px;
+    border-left: 1px solid #d9d9d9;
+}
+.pa-form-field-date {
+    max-width: 116px;
+}
+.pa-row-line {
+    padding-bottom: 21px;
+    border-bottom: 1px solid #d9d9d9;
 }

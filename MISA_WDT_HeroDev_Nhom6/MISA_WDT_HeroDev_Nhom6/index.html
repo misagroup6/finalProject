@@ -84,7 +84,7 @@
                             </div>  <!--end header-->
                             <div class="pa-panel">
                                 <div class="pa-panel-inner">
-                                    <div class="pa-row">
+                                    <div class="pa-row pa-row-line">
                                         <div class="pa-col pa-avatar" style="padding-left:0;">
                                             <div>
                                                 <img class="pa-user-image" src="Contents/Images/ImageHandler (1).png" alt="Ảnh nhân viên" />
@@ -94,91 +94,157 @@
                                                 <input type="file" accept="image/*" style="display: none;"> 
                                             </div>
                                         </div>
-                                        <div class="pa-col pa-col-common">
+                                        <div class="pa-col pa-col-common pa-flex">
                                             <div class="pa-row">
-                                                <div class="pa-col flex left-content">
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                <div class="pa-col pa-flex pa-left-content">
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Mã nhân viên
+                                                                <span class="pa-lbl-require">(*)</span>
+                                                            </span>
                                                         </div>
-                                                    </div>  <!--end one input-->
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
                                                         </div>
-                                                    </div>  <!--end one input-->
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                    </div>      <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Họ và đệm
+                                                            </span>
                                                         </div>
-                                                    </div>  <!--end one input-->
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Tên
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Họ và tên
+                                                                <span class="pa-lbl-require">(*)</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Giới tính
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input style="width: 90%;" class="pull-left" type="text" name="name" value="" />
+                                                                
+                                                            </div>
+                                                            <div class="pa-form-trigger pa-cbo-trigger"></div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Ngày sinh
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item pa-form-field-date">
+                                                                <input style="width: 75%;" class="pull-left" type="text" name="name" value="" />
+                                                                <div class="pa-form-trigger pa-date-trigger"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
                                                 </div>  <!--end left content-->
-                                                <div class="pa-col flex right-content">
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                <div class="pa-col pa-flex pa-right-content">
+                                                    <div class="pa-row" style="height:72px;">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Địa chỉ
+                                                            </span>
                                                         </div>
-                                                    </div>
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>  <!--end one input-->
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <textarea style="width: 100%;height: 100%;border-radius: 3px;border-color: #d9d9d9;border-width: 1px;border-style: solid;overflow: hidden;padding: 4px 6px;line-height: 17px;"></textarea>
+                                                            </div>
                                                         </div>
-                                                    </div>  <!--end one input-->
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Điện thoại
+                                                            </span>
                                                         </div>
-                                                    </div>  <!--end one input-->
-                                                    <div class="pa-col pa-col2">
-                                                        <span class="pa-label-style">
-                                                            Mã nhân viên
-                                                            <span class="pa-lbl-require">(*)</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="pa-col flex">
-                                                        <div class="pa-form-item">
-                                                            <input type="text" name="name" value="" />
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
                                                         </div>
-                                                    </div>  <!--end one input-->
-                                                </div>  <!--end right content-->
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Email
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input type="text" name="name" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Vị trí công việc
+                                                                <span class="pa-lbl-require">(*)</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input style="float:left;width: 82%;" type="text" name="name" value="" />
+                                                                <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                <a class="pa-form-trigger pa-more-trigger" href="#"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                    <div class="pa-row">
+                                                        <div class="pa-col pa-col2">
+                                                            <span class="pa-label-style">
+                                                                Đơn vị công tác
+                                                                <span class="pa-lbl-require">(*)</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="pa-col pa-flex">
+                                                            <div class="pa-form-item">
+                                                                <input style="float:left;width: 82%;" type="text" name="name" value="" />
+                                                                <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                <a class="pa-form-trigger pa-more-trigger" href="#"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--end one row-->
+                                                </div>      <!--end right content-->
                                             </div>
-                                        </div>
+                                        </div>  <!--end col-->
                                     </div>
                                 </div>  <!--end container-->
                             </div>  <!--end panel-->
