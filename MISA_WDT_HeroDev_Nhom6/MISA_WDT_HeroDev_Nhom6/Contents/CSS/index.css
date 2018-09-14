@@ -34,3 +34,13 @@
     top: 50px;
     height: 201px;
 }
+/*----------------------------PROFILE ADD------------------------------*/
+.profile-add {
+    position: absolute !important;
+    margin: 0px;
+    width: 1136px;
+    right: auto;
+    left: 230px;
+    top: 50px;
+    height: 250px;
+}
