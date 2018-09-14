@@ -44,7 +44,7 @@
     top: 50px;
     height: 250px;
 }
-.profile-add-wrap {
+.profile-add-inner {
     width: 1136px;
     left: 0px;
     top: 0px;
@@ -58,7 +58,7 @@
     width: 1136px;
     top: 0px;
     height: 65px;
-    box-shadow: #888 0 0 6px;
+    box-shadow: #888 0 0 10px;
 }
 
 .pa-title {
@@ -67,6 +67,9 @@
     top: 0px;
     height: 34px;
     display: table;
+    font-size: 12px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
 }
 
 .pa-profile {
@@ -85,7 +88,82 @@
 .pa-add-new {
     color: #000;
     font-size: 16px;
-    padding-left: 0 !important;
+    padding-left: 2px !important;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
+}
+/*---------------------TOOLBAR---------------------------------*/
+.pa-toolbar {
+    width: 1136px;
+    right: auto;
+    left: 0px;
+    top: 34px;
+    border-bottom: none;
+    background-color: #fff;
+    padding: 0 0 0 16px;
+    border-width: 1px 0 !important;
+    border-color: #d9d9d9;
+    position: absolute !important;
+    z-index: 2;
+    border-top: 1px solid #92929285;
+}
+.pa-toolbar-inner {
+    width: 1120px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.pa-btn {
+    position: absolute !important;
+    top: -1px !important;
+    margin-right: 6px;
+    display: inline-block;
+    cursor: pointer;
+    min-height: 30px;
+    padding: 4px;
+    text-decoration: none !important;
+}
+.pa-btn:hover{
+    background-color: rgba(2, 119, 189, 0.15);
+}
+.pa-btn-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.pa-btn-icon {
+    height: 24px;
+    width: 24px;
+}
+.pa-btn-name {
+    font-size: 12px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
+    padding: 0 6px;
+}
+#pa-btnCut {
+    background: url('../Images/save16.png') no-repeat center center;
+}
+#pa-btnCutAdd {
+    background: url('../Images/saveadd16.png') no-repeat center center;
+}
+#pa-btnReject {
+    background: url('../Images/reject16.png') no-repeat center center;
+}
+#pa-btnSetting {
+    background: url('../Images/setting16.png') no-repeat center center;
+}
+#pa-btnHelp {
+    background: url('../Images/question16.png') no-repeat center center;
+}
+#pa-btnResponse {
+    background: url('../Images/sound16.png') no-repeat center center;
+}
+#pa-btnClose {
+    background: url('../Images/close16.png') no-repeat center center;
 }
 /*-----------------------COMMON---------------------------------*/
 .pa-container {
