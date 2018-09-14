@@ -44,3 +44,98 @@
     top: 50px;
     height: 250px;
 }
+.profile-add-wrap {
+    width: 1136px;
+    left: 0px;
+    top: 0px;
+    height: 250px;
+}
+
+.pa-header {
+    margin: 0px;
+    right: auto;
+    left: 0px;
+    width: 1136px;
+    top: 0px;
+    height: 65px;
+    box-shadow: #888 0 0 6px;
+}
+
+.pa-title {
+    width: 1136px;
+    left: 0px;
+    top: 0px;
+    height: 34px;
+    display: table;
+}
+
+.pa-profile {
+    text-decoration: none;
+    color: #0277bd;
+    font-size: 16px;
+}
+
+.pa-sp {
+    background: url('../Images/arr_right.png') no-repeat center center;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 -2px 11px;
+}
+
+.pa-add-new {
+    color: #000;
+    font-size: 16px;
+    padding-left: 0 !important;
+}
+/*-----------------------COMMON---------------------------------*/
+.pa-container {
+    display: table-cell;
+    height: 100%;
+    vertical-align: top;
+}
+
+.pa-no-border {
+    border-width: 0 !important;
+}
+
+.pa-panel-default {
+    border-color: #f5f5f5;
+    padding: 0;
+}
+
+.pa-panel {
+    outline: none;
+}
+
+.pa-box-item {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+}
+
+.pa-panel-body-default {
+    background: #fff;
+    border-color: #cfcfcf;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: helvetica, arial, verdana, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.pa-panel-body {
+    overflow: hidden;
+    position: relative;
+}
+
+.pa-fit-item {
+    position: relative;
+}
+
+.pa-br-item {
+    display: inline-block;
+    line-height: 34px;
+    padding-left: 12px;
+    font-weight: bold;
+}
