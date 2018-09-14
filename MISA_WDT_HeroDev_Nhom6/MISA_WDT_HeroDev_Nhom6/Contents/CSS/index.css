@@ -43,6 +43,7 @@
     left: 230px;
     top: 50px;
     height: 250px;
+    /*display: none;*/
 }
 .profile-add-inner {
     width: 1136px;
@@ -70,6 +71,12 @@
     font-size: 12px;
     font-family: Helvetica,Tahoma,Arial,sans-serif !important;
     color: #1d2129;
+}
+.pa-br-item {
+    display: inline-block;
+    line-height: 34px;
+    padding-left: 12px;
+    font-weight: bold;
 }
 
 .pa-profile {
@@ -165,55 +172,122 @@
 #pa-btnClose {
     background: url('../Images/close16.png') no-repeat center center;
 }
-/*-----------------------COMMON---------------------------------*/
-.pa-container {
-    display: table-cell;
-    height: 100%;
-    vertical-align: top;
+/*-----------------------BASIC INFO---------------------------------*/
+.pa-basic-info {
+    width: 1136px;
+    left: 0px;
+    top: 71px;
+    height: 179px;
+    position: absolute;
 }
-
-.pa-no-border {
-    border-width: 0 !important;
+.pa-basic-info-inner {
+    width: 1136px;
+    left: 0px;
+    top: 0px;
+    height: 179px;
+    font-size: 13px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
 }
-
-.pa-panel-default {
-    border-color: #f5f5f5;
-    padding: 0;
-}
-
-.pa-panel {
-    outline: none;
-}
-
-.pa-box-item {
-    position: absolute !important;
+.pa-basic-info-inner-wrap {
+    height: 2986px;
+    width: 1119px;
+    position: relative;
     left: 0;
     top: 0;
 }
-
-.pa-panel-body-default {
-    background: #fff;
-    border-color: #cfcfcf;
-    color: #000;
-    font-size: 15px;
-    font-weight: 300;
-    font-family: helvetica, arial, verdana, sans-serif;
-    border-width: 1px;
-    border-style: solid;
+.pa-basic-info-box {
+    margin: 0px;
+    right: auto;
+    left: 16px;
+    width: 1087px;
+    height: 909px;
+    top: 6px;
+    box-shadow: #888 0 2px 6px;
+    border-radius: 4px;
+    position: absolute !important;
 }
-
-.pa-panel-body {
-    overflow: hidden;
+.pa-basic-info-header {
+    width: 1087px;
+    right: auto;
+    left: 0px;
+    top: 0px;
+    padding: 20px 16px 0 16px;
+    position: absolute !important;
+    z-index: 2;
+}
+.pa-basic-info-title {
+    width: 1055px;
+    height: 33px;
     position: relative;
+    left: 0;
+    top: 0;
+    display: table;
+    table-layout: fixed;
+    text-align: left;
+    background: url('../Images/panel-header-bg.png') repeat 0 center;
 }
-
-.pa-fit-item {
-    position: relative;
-}
-
-.pa-br-item {
+.pa-basic-info-title-inner {
     display: inline-block;
-    line-height: 34px;
-    padding-left: 12px;
-    font-weight: bold;
+    padding: 0 10px 0 0;
+    background-color: #fff;
+    color: #0c68b5;
+    font-size: 16px;
+    margin-top: 6px;
+}
+/*-------------------------------------PANEL INFO (BOTTOM CONTENT)-------------------------*/
+.pa-panel {
+    width: 1087px;
+    left: 0px;
+    top: 53px;
+    height: 856px;
+    border-top: none !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 0;
+    position: relative;
+}
+.pa-panel-inner {
+    width: 100%;
+    table-layout: fixed;
+    display: table;
+    font-size: 13px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
+    /*display: table-cell;*/
+    height: 100%;
+    vertical-align: top;
+}
+.pa-row {
+    display: flex;
+    padding-top: 8px;
+}
+.pa-col {
+    padding-left: 8px;
+}
+.pa-row .m-col:first-child {
+    padding-left: 0;
+}
+.pa-row:first-child {
+    padding-top: 0;
+}
+.pa-avatar {
+    width: 120px;
+    position: relative;
+}
+.pa-user-image {
+    width: 120px;
+    height: 150px;
+}
+.pa-choose-img {
+    position: absolute;
+    top: 120px;
+    width: 120px;
+    line-height: 28px;
+    background-color: #757879;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
 }
