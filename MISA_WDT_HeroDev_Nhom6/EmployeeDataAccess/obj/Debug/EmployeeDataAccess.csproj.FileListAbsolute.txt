@@ -1,0 +1,12 @@
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll.config
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.pdb
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojAssemblyReference.cache
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csproj.CopyComplete
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
+C:\Users\lam.nt\MISA.finalProject\finalProject\MISA_WDT_HeroDev_Nhom6\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb
