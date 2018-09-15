@@ -20,11 +20,19 @@ namespace MISA_WDT_HeroDev_Nhom6.Controllers
             }
         }
 
-        public Employee Get(string IDparam)
+        public HttpResponseMessage Get(string IDparam)
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                return entities.Employees.FirstOrDefault(e => e.MaNhanVien == IDparam);
+                var entity = entities.Employees.FirstOrDefault(e => e.MaNhanVien == IDparam);
+                if(entity != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, entity);
+                }
+                else
+                {
+                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Ma nhan vien " + IDparam + " khong ton tai");
+                }
             }
         }
 
@@ -35,8 +43,8 @@ namespace MISA_WDT_HeroDev_Nhom6.Controllers
             try
             {
                 //Check if this id exists
-                Employee resultEmployee = Get(employee.MaNhanVien);
-                if (resultEmployee == null)
+                HttpResponseMessage resultEmployee = Get(employee.MaNhanVien);
+                if ((int) resultEmployee.StatusCode != 200)
                 { 
                     //save new employee to database
                     using (EmployeeDBEntities entities = new EmployeeDBEntities())
