@@ -1,22 +1,1450 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>AMIS.VN</title>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Contents/CSS/index.css" rel="stylesheet" />
+    <link href="Contents/CSS/bootstrap.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="menu-top">
+    <div class="my-content">
+        <div class="menu">
+            <div class="menu-left">
+                <div class="menu-left-icon click-btn">
+                    <img src="Contents/Pictures/icon-left-header.png" alt="icon1" />
+                </div>
+                <div class="menu-left-symbol">
+                    <img src="Contents/Pictures/logo-text.png" alt="cukcuk" />
+                </div>
+                <div class="menu-left-store">
+                    <select class="menu-left-store-content" name="store">
+                        <option>Nhà hàng biển Đông</option>
+                        <option>Nhà hàng biển Tây</option>
+                    </select>
+                </div>
+            </div>
+            <div class="menu-right">
+                <div class="menu-right-lang">
+                    <select class="menu-right-lang-content" name="lang">
+                        <option value="vn">Tiếng Việt (Tiếng Việt)</option>
+                        <option value="en">English (Tiếng Anh)</option>
+                        <option value="de">Deutsch (Tiếng Đức)</option>
+                    </select>
+                </div>
+                <div class="menu-right-icon">
+                    <img src="Contents/Pictures/earth.png" alt="icon2" style="width: 24px;
+            height: 24px;">
+                </div>
+                <div class="menu-right-user">
+                    <div class="menu-right-user-img">
+                        <img src="Contents/Pictures/EmployeeImage.png" alt="icon3" />
+                    </div>
+                    <div class="menu-right-user-name">
+                        Hoàng Trường Giang
+                    </div>
+                    <div class="menu-right-dropdown">
+                        <img src="Contents/Pictures/default-small-arrow.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="content-left-wrap">
+                    <div class="content-left">
+                        <div class="content-left-exten" click="active">
+                            <div class="content-left-exten-icon-1">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Tổng quan
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click-report="display" click="active">
+                            <div class="content-left-exten-icon-2">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Báo cáo
+                            </div>
+                            <div class="content-left-exten-icon-left-icon-2">
+                            </div>
+                        </div>
+                        <div class="content-left-exten-more">
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Bán hàng
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Mua hàng
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Kho
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Công nợ
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Quỹ tiền
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Lợi nhuận
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click="active">
+                            <div class="content-left-exten-icon-8">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Khuyến mại
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click="active" id="danhmuc">
+                            <div class="content-left-exten-icon-11">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Danh mục
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click="active">
+                            <div class="content-left-exten-icon-12">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Thiết lập hệ thống
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click-report="display" click="active">
+                            <div class="content-left-exten-icon-13">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Trợ giúp
+                            </div>
+                            <div class="content-left-exten-icon-left-icon-13">
+                            </div>
+                        </div>
+                        <div class="content-left-exten-more">
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Nội dung trợ giúp
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Thỏa thuận sử dụng dịch vụ
+                                </div>
+                            </div>
+                            <div class="content-left-exten" click="active">
+                                <div class="content-left-exten-icon">
+                                </div>
+                                <div class="content-left-exten-content">
+                                    Thông tin sản phẩm
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click="active">
+                            <div class="content-left-exten-icon-14">
+                            </div>
+                            <div class="content-left-exten-content">
+                                Thuê bao
+                            </div>
+                        </div>
+                        <div class="content-left-exten" click="active">
+                            <div class="content-left-exten-icon-15">
+                            </div>
+                            <div class="content-left-exten-content">
+                                5Food
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-left-sub">
+                    <div class="content-left-sub-left">
+                        <div class="content-left-sub-left-top">
+                            <div class="sub-menu">
+                                <div class="sub-menu-thucdon">
+                                    <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/InventoryItem.png" alt="">
+                                </div>
+                                <div class="sub-menu-content">
+                                    THỰC ĐƠN
+                                </div>
+                            </div>
+                            <div class="sub-content">
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Thực đơn</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhóm thực đơn</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Sở thích phục vụ</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhóm sở thích phục vụ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left-sub-left-bottom">
+                            <div class="sub-menu">
+                                <div class="sub-menu-thucdon">
+                                    <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/CustomerVendorEmployee.png"
+                                        alt="">
+                                </div>
+                                <div class="sub-menu-content">
+                                    KH, NCC, NHÂN VIÊN
+                                </div>
+                            </div>
+                            <div class="sub-content">
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhân viên</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon" id="btn-customer">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Khách hàng</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhóm khách hàng</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhà cung cấp</span>
+                                    </div>
+                                </div>
+                                <div class="sub-content-thucdon">
+                                    <div class="trangtri">
+                                        <div class="border-left">
+                                        </div>
+                                        <div class="border-right">
+                                        </div>
+                                    </div>
+                                    <div class="thucdon">
+                                        <span class="thucdon-details">Nhóm nhà cung cấp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-left-sub-right">
+                        <div class="content-left-sub-left">
+                            <div class="content-left-sub-left-top">
+                                <div class="sub-menu">
+                                    <div class="sub-menu-thucdon">
+                                        <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/InventoryItemMaterial.png"
+                                            alt="">
+                                    </div>
+                                    <div class="sub-menu-content">
+                                        NGUYÊN VẬT LIỆU
+                                    </div>
+                                </div>
+                                <div class="sub-content">
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Nguyên vật liệu</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Nhóm nguyên vật liệu</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Kho</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Đơn vị tính</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-sub-left-bottom">
+                                <div class="sub-menu">
+                                    <div class="sub-menu-thucdon">
+                                        <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/OtherDictionary.png"
+                                            alt="">
+                                    </div>
+                                    <div class="sub-menu-content">
+                                        KHÁC
+                                    </div>
+                                </div>
+                                <div class="sub-content">
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Ca làm việc</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Két đựng tiền</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Bếp/Bar</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Lý do hủy món</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Lý do hủy order</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Mục thu/chi</span>
+                                        </div>
+                                    </div>
+                                    <div class="sub-content-thucdon">
+                                        <div class="trangtri">
+                                            <div class="border-left">
+                                            </div>
+                                            <div class="border-right">
+                                            </div>
+                                        </div>
+                                        <div class="thucdon">
+                                            <span class="thucdon-details">Thẻ ngân hàng/ví điện tử</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-add">
+                            <div id="profile-add" class="profile-add">
+                                <div class="profile-add-inner">
+                                    <div class="pa-header">
+                                        <div class="pa-title">
+                                            <span class="pa-br-item pa-profile">Hồ sơ</span>
+                                            <span class="pa-br-item pa-sp"></span>
+                                            <span class="pa-br-item pa-add-new">Thêm mới nhân viên</span>
+                                        </div>
+                                        <div class="pa-toolbar">
+                                            <div class="pa-toolbar-inner">
+                                                <a class="pa-btn" href="#">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnCut"></span>
+                                                        <span class="pa-btn-name">Cắt</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 69px;">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnCutAdd"></span>
+                                                        <span class="pa-btn-name">Cắt & Thêm</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 184px;" title="Ctrl+U">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnReject"></span>
+                                                        <span class="pa-btn-name">Hoãn</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 271px;">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnSetting"></span>
+                                                        <span class="pa-btn-name">Thiết lập ngầm định</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 436px;" title="F1">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnHelp"></span>
+                                                        <span class="pa-btn-name">Giúp</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 512px;">
+                                                    <span class="pa-btn-inner">
+                                                        <span class="pa-btn-icon" id="pa-btnResponse"></span>
+                                                        <span class="pa-btn-name">Phản hồi</span>
+                                                    </span>
+                                                </a>
+                                                <a class="pa-btn" href="#" style="left: 619px;" title="Ctrl+Q">
+                                                    <span class="pa-btn-inner" id="pa-closeAddContent">
+                                                        <span class="pa-btn-icon" id="pa-btnClose"></span>
+                                                        <span class="pa-btn-name">Đóng</span>
+                                                    </span>
+                                                </a>
+                                            </div>  <!--end toolbar-inner-->
+                                        </div>  <!--end toolbar-->
+                                    </div>  <!--end pa-header-->
+                                    <div class="pa-basic-info">
+                                        <div class="pa-basic-info-inner">
+                                            <div class="pa-basic-info-inner-wrap">
+                                                <div class="pa-basic-info-box">
+                                                    <div class="pa-basic-info-header">
+                                                        <div class="pa-basic-info-title">
+                                                            <div class="pa-basic-info-title-inner">
+                                                                1. Thông tin chung
+                                                            </div>
+                                                        </div>
+                                                    </div>  <!--end header-->
+                                                    <div class="pa-panel">
+                                                        <div class="pa-panel-inner">
+                                                            <div class="pa-row pa-row-line">
+                                                                <div class="pa-col pa-avatar" style="padding-left:0;">
+                                                                    <div>
+                                                                        <img class="pa-user-image" src="Contents/images/ImageHandler (1).png" alt="Ảnh nhân viên" />
+                                                                        <div class="pa-choose-img">
+                                                                            Chọn ảnh
+                                                                        </div>
+                                                                        <input type="file" accept="image/*" style="display: none;"> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pa-col pa-col-common pa-flex">
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-flex pa-left-content">
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Mã nhân viên
+                                                                                        <span class="pa-lbl-require">(*)</span>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>      <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Họ và đệm
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Tên
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Họ và tên
+                                                                                        <span class="pa-lbl-require">(*)</span>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Giới tính
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input style="width: 90%;" class="pull-left" type="text" name="name" value="" />
+                                                                                        
+                                                                                    </div>
+                                                                                    <div class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Ngày sinh
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item pa-form-field-date">
+                                                                                        <input style="width: 75%;" class="pull-left" type="text" name="name" value="" />
+                                                                                        <div class="pa-form-trigger pa-date-trigger"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                        </div>  <!--end left content-->
+                                                                        <div class="pa-col pa-flex pa-right-content">
+                                                                            <div class="pa-row" style="height:72px;">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Địa chỉ
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <textarea style="width: 100%;height: 100%;border-radius: 3px;border-color: #d9d9d9;border-width: 1px;border-style: solid;overflow: hidden;padding: 4px 6px;line-height: 17px;"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Điện thoại
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Email
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input type="text" name="name" value="" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Vị trí công việc
+                                                                                        <span class="pa-lbl-require">(*)</span>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input style="float:left;" type="text" name="name" value="" />
+                                                                                        <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                        <a class="pa-form-trigger pa-more-trigger" href="#"></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                            <div class="pa-row">
+                                                                                <div class="pa-col pa-col2">
+                                                                                    <span class="pa-label-style">
+                                                                                        Đơn vị công tác
+                                                                                        <span class="pa-lbl-require">(*)</span>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div class="pa-col pa-flex">
+                                                                                    <div class="pa-form-item">
+                                                                                        <input style="float:left;" type="text" name="name" value="" />
+                                                                                        <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                        <a class="pa-form-trigger pa-more-trigger" href="#"></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div> <!--end one row-->
+                                                                        </div>      <!--end right content-->
+                                                                    </div>
+                                                                </div>  <!--end col-->
+                                                            </div>
+                                                        </div>  <!--end container-->
+                                                    </div>  <!--end panel-->
+                                                </div>  <!--end basic info box-->
+                                            </div>  <!--end inner wrap-->
+                                        </div>  <!--end inner-->
+                                    </div>  <!--end basic info-->
+                                </div>  <!--end pa-inner-->
+                            </div>  <!--end profile add-->
+                </div>
+                <div class="content-right">
+                    <div class="content-right-head">
+                        <div class="content-right-head-left">
+                            <div class="list-head">
+                                Hồ sơ nhân viên
+                            </div>
+                            <div class="list-icon">
+                            </div>
+                            <div class="list-more">
+                                Hồ sơ
+                            </div>
+                        </div>
+                        <div class="content-right-head-right">
+                            <div class="list-company-wrap">
+                                <select class="list-company">
+                                    <option>Công ty cổ phần MISA</option>
+                                    <option>Công ty cổ phần hihi</option>
+                                    <option>Công ty cổ phần haha</option>
+                                </select>
+                            </div>
+                            <div class="list-work-status-wrap">
+                                <select class="list-work-status">
+                                    <option>Đang làm việc</option>
+                                    <option>Đang nghỉ phép</option>
+                                    <option>Đã nghỉ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-mid-wrap">
+                        <div class="content-right-mid">
+                            <div class="toolbar">
+                                <div class="toolbar-content" clickPopUp="true" id="show-popup">
+                                    <div class="add-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Thêm
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="view-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Xem
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="del-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Xóa
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="print-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        In
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="email-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Gửi email hàng loạt
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="report-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Báo cáo
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="load-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Nạp
+                                    </div>
+                                    <div class="toolbar-arrow-icon">
+                                        
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="utility-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Tiện ích
+                                    </div>
+                                    <div class="toolbar-arrow-icon">
+                                        
+                                    </div>
+                                </div>
+                                <div class="seperator">
 
-    </div>  <!--end menu-top-->    
-    <div class="menu-left">
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="feedback-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Phản hồi
+                                    </div>
+                                </div>
+                                <div class="toolbar-content">
+                                    <div class="help-icon">
+                                    </div>
+                                    <div class="add-content">
+                                        Giúp
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-content">
+                                <table class="my-index-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="style-head">Mã nhân viên</th>
+                                            <th class="style-head">Họ và tên</th>
+                                            <th class="style-head">Giới tính</th>
+                                            <th class="style-head">Ngày sinh</th>
+                                            <th class="style-head">Trình độ đào tạo</th>
+                                            <th class="style-head">Nơi đào tạo</th>
+                                            <th class="style-head">Chuyên ngành</th>
+                                            <th class="style-head">Vị trí công việc</th>
+                                            <th class="style-head">Đơn vị công tác</th>
+                                            <th class="style-head">Ngày thử việc</th>
+                                            <th class="style-head">Ngày chính thức nhận việc</th>
+                                            <th class="style-head">Ghi chú</th>
+                                            <th class="style-head">Ngừng theo dõi</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                            <th class="style-head">
+                                                <div class="filter-input">
+                                                    <a href="#">*</a>
+                                                    <input type="text" name="filterID">
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                        <tr count="true">
+                                            <td>KH00001</td>
+                                            <td>Nguyễn Văn Mạnh</td>
+                                            <td>Công ty cổ phần MISA</td>
+                                            <td>000011112311</td>
+                                            <td>TP Bắc Giang, tỉnh Bắc Giang</td>
+                                            <td>0977340334</td>
+                                            <td>manhnv229@gmail.com</td>
+                                            <td>TV0001</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>False</td>
+                                            <td>False</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right-sum">
+                            <div class="sum-of-total-items-wrap">
+                                <div class="sum-text">Tổng số:</div>
+                                <div class="sum-of-total-items">nhét function tính tổng item here</div>
+                                <div class="sum-text">bản ghi</div>
+                            </div>
+                    </div>
+                    <div class="content-right-footer">
+                        <div class="content-right-footer-wrap">
+                            <div class="footer-left">
+                                <div class="foot-head-btn-wrap" click="btn-scroll-left">
+                                        <div class="foothead-btn-left">
+                                        </div>
+                                </div>
+                                <div class = "foothead-navi">
+                                    <div class="foot-head-content-wrap" click="active1" id="show-info">
+                                            <div class="foothead-content">
+                                                1. THÔNG TIN CHUNG
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                2. THÔNG TIN LIÊN HỆ
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                3. GIA ĐÌNH
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                4. HỢP ĐỒNG LAO ĐỘNG
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                5. QUÁ TRÌNH CÔNG TÁC
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                6. THU NHẬP THƯỜNG XUYÊN
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                7. KHẤU TRỪ THƯỜNG XUYÊN
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                8. LỊCH SỬ LƯƠNG
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                9. ĐÂY LÀ CÁI CHO VÀO ĐỂ CÓ SCROLL NÈ
+                                            </div>
+                                    </div>
+                                    <div class="foot-head-content-wrap" click="active1" id="hide-info">
+                                            <div class="foothead-content">
+                                                10. SCROLL TIẾP NÀY HIHIXD
+                                            </div>
+                                </div>
+                                </div>
+                                <div class="foot-head-btn-wrap" click="btn-scroll-right">
+                                        <div class="foothead-btn-right">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class ="footer-right">
+                                <div class="btn-more"></div>
+                                <div class="btn-setting"></div>
+                            </div>
+                        </div>
+                        <div class ="content-right-footer-info">
+                            <div class="content-right-footer-info-wrapper">
+                                <div class=staff-image-wrap>
+                                    <div class="staff-image"></div>
+                                </div>
+                                <div class=staff-table-wrap>
+                                        <div class="staff-table">
+                                            <table class="info-table">
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Mã nhân viên:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                    <td class="table-label">Vị trí công việc:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Họ và tên:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                    <td class="table-label">Đơn vị công tác:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Giới tính:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                    <td class="table-label">Ngày thử việc:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Ngày sinh:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                    <td class="table-label">Ngày chính thức:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Số CMND/Thẻ căn cước:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                                <tr class = "tablerow">
+                                                    <td class="table-label">Hộ chiếu:</td>
+                                                    <td class="info-fill">lấy data từ databased vào đây</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
 
-    </div>   <!--end menu-left-->
-    <div class="content-right">
-
-    </div>  <!--end content-right-->
+        <div class="popup-blur-content">
+        </div>
+    </div>
     <script src="Scripts/jquery-3.3.1.js"></script>
-    <script src="Scripts/index.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Scripts/js1.js"></script>
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        })
+    </script>
 </body>
+
 </html>
