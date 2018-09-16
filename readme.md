@@ -12,7 +12,7 @@ Description:<br/>
   
   <br/><br/>
   press "thêm" to see the add staff menu done by Thành<br/>
-    On that menu press "đóng to return to original page"
+    On that menu press "đóng" to return to original page
   
   <br/><br/>
   contains footer navigation that can be scrolled horizontally by pressing left and right arrow
