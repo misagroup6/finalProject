@@ -474,7 +474,7 @@
                                 <div class="pa-toolbar">
                                     <div class="pa-toolbar-inner">
                                         <a class="pa-btn" href="#">
-                                            <span class="pa-btn-inner">
+                                            <span id="save-btn" class="pa-btn-inner">
                                                 <span class="pa-btn-icon" id="pa-btnCut"></span>
                                                 <span class="pa-btn-name">Cắt</span>
                                             </span>
@@ -542,7 +542,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="pa-col pa-col-common pa-flex">
-                                                            <form method="post" action="/api/employees">
+                                                            <form id="add-form-id" method="post" action="/api/employees">
                                                                 <div class="pa-row">
                                                                     <div class="pa-col pa-flex pa-left-content">
                                                                         <div class="pa-row">
@@ -691,7 +691,6 @@
                                                                         </div> <!--end one row-->
                                                                     </div>      <!--end right content-->
                                                                 </div>
-                                                                <input type="submit" value="Add" />
                                                             </form>
                                                         </div>  <!--end col-->
                                                     </div>

@@ -8,7 +8,6 @@
             if (data) {
                 var customers = JSON.parse(data);
                 $.each(customers, function (index, item) {
-                    //var info = 'KH' + item['ID'].toString().padStart(4, '0') + '-' + item['Code'] + '-' + item['Name'] + '<br/>';
                     var info = '<tr count="true">'
                         + '<td>' + item['MaNhanVien'] + '</td>'
                         + '<td>' + item['HoVaTen'] + '</td>'
@@ -25,13 +24,17 @@
             }
         },
         error: function (data) {
-            debugger
+
         },
         done: function (data) {
-            debugger
+
         },
         fail: function (data) {
-            debugger
+
         }
+    });
+
+    $("#save-btn").click(function () {
+        $("#add-form-id").submit();
     });
 });
