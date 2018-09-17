@@ -13,6 +13,15 @@
                         if (item[property] === null) {
                             item[property] = "";
                         }
+                        else {
+                            if (property === 'NgaySinh') {
+                                //change date display format
+                                var str = item[property].substr(0, 10);
+                                var time = str.split('-');
+                                str = time[2] + '-' + time[1] + '-' + time[0];
+                                item[property] = str;
+                            }
+                        }
                     }
 
                     //append data to table
