@@ -1,6 +1,6 @@
 INSTRUCTION TO CONNECT DATABASE
 
-I assume that you have install SQL Server Management Studio (SSMS)
+I assume that you have installed SQL Server Management Studio (SSMS)
 
 1/create database using command
 -Open SSMS
