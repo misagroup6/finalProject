@@ -8,6 +8,14 @@
             if (data) {
                 var customers = JSON.parse(data);
                 $.each(customers, function (index, item) {
+                    //check for empty field
+                    for (var property in item) {
+                        if (item[property] === null) {
+                            item[property] = "";
+                        }
+                    }
+
+                    //append data to table
                     var info = '<tr count="true">'
                         + '<td>' + item['MaNhanVien'] + '</td>'
                         + '<td>' + item['HoVaTen'] + '</td>'
