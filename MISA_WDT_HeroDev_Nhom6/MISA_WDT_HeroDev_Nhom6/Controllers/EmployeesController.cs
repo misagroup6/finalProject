@@ -16,7 +16,7 @@ namespace MISA_WDT_HeroDev_Nhom6.Controllers
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                return entities.Employees.OrderByDescending(e => e.ID).ToList();
+                return entities.Employees.OrderByDescending(e => e.MaNhanVien).ToList();
             }
         }
 
