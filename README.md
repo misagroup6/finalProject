@@ -11,23 +11,36 @@ I assume that you have installed SQL Server Management Studio (SSMS)
 	-Paste these commands to new query and click Execute:
 
 Create Database EmployeeDB
+
 Go
 
 Use EmployeeDB
+
 Go
 
 Create table Employees(
+
 	ID int primary key identity,
+	
 	MaNhanVien nvarchar(20),
+	
 	HoVaTen nvarchar(50),
+	
 	GioiTinh nvarchar(10),
+	
 	NgaySinh date,
+	
 	DiaChi nvarchar(200),
+	
 	DienThoai nvarchar(20),
+	
 	Email nvarchar(30),
+	
 	ViTriCongViec nvarchar(100),
+	
 	DonViCongTac nvarchar(100)
 )
+
 Go
 
 	-Restart SSMS
