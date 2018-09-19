@@ -50,12 +50,8 @@ Go
 
 	-run
 
-3/running
+3/run
 
 	-Open "Khách hàng" tab as shown in Giang's instruction
 
 	-To add new employee, click "Thêm", fill in information, then click "Cắt" to save
-
-	-Reopen "Khách hàng" tab to check newly added employee
-
-*Note: New employee with duplicated ID will not be added to database
