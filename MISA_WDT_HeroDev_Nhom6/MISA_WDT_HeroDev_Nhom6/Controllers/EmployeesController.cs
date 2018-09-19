@@ -44,21 +44,33 @@ namespace MISA_WDT_HeroDev_Nhom6.Controllers
             {
                 //Check if this id exists
                 HttpResponseMessage resultEmployee = Get(employee.MaNhanVien);
-                if ((int) resultEmployee.StatusCode != 200)
-                { 
+                if ((int) resultEmployee.StatusCode == 200)
+                {
+                    var message = Request.CreateResponse(HttpStatusCode.Conflict, employee);
+                    return message;
+                    
+                }
+                else
+                {
                     //save new employee to database
                     using (EmployeeDBEntities entities = new EmployeeDBEntities())
                     {
                         entities.Employees.Add(employee);
                         entities.SaveChanges();
+
+                        var message = Request.CreateResponse(HttpStatusCode.Created, employee);
+                        message.Headers.Location = new Uri(Request.RequestUri +
+                            employee.MaNhanVien.ToString());
+
+                        return message;
                     }
                 }
 
-                //Redirect to home page
-                string rootUrl = HttpContext.Current.Request.Url.Authority;
-                var response = Request.CreateResponse(HttpStatusCode.Moved);
-                response.Headers.Location = new Uri("http://" + rootUrl + "/index.html");
-                return response;
+                ////Redirect to home page
+                //string rootUrl = HttpContext.Current.Request.Url.Authority;
+                //var response = Request.CreateResponse(HttpStatusCode.Moved);
+                //response.Headers.Location = new Uri("http://" + rootUrl + "/index.html");
+                //return response;
             }
 
             catch(Exception ex)

@@ -64,7 +64,26 @@
     });
 
     $("#save-btn").click(function () {
-        $("#add-form-id").submit();
+        $.ajax({
+            url: 'api/employees',
+            type: 'POST',
+            data: $('#add-form-id').serialize(),
+
+            success: function (data, textStatus, xhr) {
+                alert("Thêm thành công mã nhân viên " + data.MaNhanVien + "");
+                $("#pa-closeAddContent").click();
+                $("#btn-customer").click();
+            },
+
+            error: function (xhr, textStatus, errorThrown) {
+                if (xhr.status === 409) {
+                    alert("Mã nhân viên này đã tồn tại!");
+                }
+                else {
+                    alert("Lỗi server. Vui lòng thử lại!");
+                }
+            }
+        });
     });
 
     $('.my-index-table-body').on("click", "tr", function (e) {
