@@ -927,10 +927,6 @@ a {
     text-align: center;
 }
 
-[count="true"]:hover {
-    background-color: #c1ddf1;
-}
-
 .toolbar {
     display: flex;
     min-width: 1280px;
@@ -1081,6 +1077,10 @@ a {
 
 [count="true"]:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+[count="true"]:hover {
+    background-color: #c1ddf1;
 }
 
 .content-right-sum {
