@@ -1,0 +1,16 @@
+﻿.upper-layout{
+    z-index: 1;
+}
+
+.lower-layout{
+    z-index: 0;
+}
+
+.header{
+    position: absolute;
+}
+
+.my-content{
+    position: absolute;
+    top: 0px;
+}
