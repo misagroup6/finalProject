@@ -86,7 +86,10 @@
         });
     });
 
+
     $('.my-index-table-body').on("click", "tr", function (e) {
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
         var id = $(this).children().first().text();
         var id_url = 'api/employees?idParam=' + id;
         $.ajax({
@@ -126,5 +129,5 @@
     });
 
     //show table immediately after page loaded
-    $('#btn-customer').click();
+    //$('#btn-customer').click();
 });
