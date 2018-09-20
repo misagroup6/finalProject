@@ -126,5 +126,5 @@
     });
 
     //show table immediately after page loaded
-    $('#btn-customer').click();
+    //$('#btn-customer').click();
 });
