@@ -6,462 +6,492 @@
     <title>AMIS.VN</title>
     <link href="Contents/CSS/index.css" rel="stylesheet" />
     <link href="Contents/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="Contents/CSS/fix.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="my-content">
-        <div class="menu">
-            <div class="menu-left">
-                <div class="menu-left-icon click-btn">
-                    <img src="Contents/Pictures/icon-left-header.png" alt="icon1" />
-                </div>
-                <div class="menu-left-symbol">
-                    <img src="Contents/Pictures/logo-text.png" alt="cukcuk" />
-                </div>
-                <div class="menu-left-store">
-                    <select class="menu-left-store-content" name="store">
-                        <option>Nhà hàng biển Đông</option>
-                        <option>Nhà hàng biển Tây</option>
-                    </select>
-                </div>
+    <!--HEADER + SIDEBAR-->
+    <div class="tuananh-content">
+        <div class="header upper-layout">
+            <div class="header-left">
+                <div class="menu-button cursor-pointer" title="Ẩn/Hiện menu"></div>
+                <div class="logo-amis cursor-pointer"></div>
             </div>
-            <div class="menu-right">
-                <div class="menu-right-lang">
-                    <select class="menu-right-lang-content" name="lang">
-                        <option value="vn">Tiếng Việt (Tiếng Việt)</option>
-                        <option value="en">English (Tiếng Anh)</option>
-                        <option value="de">Deutsch (Tiếng Đức)</option>
-                    </select>
-                </div>
-                <div class="menu-right-icon">
-                    <img src="Contents/Pictures/earth.png" alt="icon2" style="width: 24px;
-            height: 24px;">
-                </div>
-                <div class="menu-right-user">
-                    <div class="menu-right-user-img">
-                        <img src="Contents/Pictures/EmployeeImage.png" alt="icon3" />
-                    </div>
-                    <div class="menu-right-user-name">
-                        Hoàng Trường Giang
-                    </div>
-                    <div class="menu-right-dropdown">
-                        <img src="Contents/Pictures/default-small-arrow.png" alt="" />
-                    </div>
-                </div>
+            <div class="app-show-icon cursor-pointer"></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm nhanh..." />
+                <div class="filter-search cursor-pointer"></div>
+            </div>
+            <div class="old-ver cursor-pointer">Làm việc với phiên bản cũ</div>
+            <div class="version-number">R22.21</div>
+            <div class="bell cursor-pointer"></div>
+            <div class="avatar cursor-pointer"></div>
+            <div class="user-name cursor-pointer">Group 6</div>
+        </div>
+        <div class="left-nav upper-layout">
+            <div class="item" title="Bàn làm việc">
+                <div class="left-icon" id="work-table"></div>
+                <div class="item-name">Bàn làm việc</div>
+            </div>
+
+            <div class="item" title="Hồ sơ nhân viên">
+                <div class="left-icon" id="employee-profile"></div>
+                <div class="item-name up-down-arrow">Hồ sơ nhân viên</div>
+            </div>
+            <div class="sub-item-hide" id="employee-div">
+                <div class="sub-item" id="btn-customer">Hồ sơ</div>
+                <div class="sub-item">Hợp đồng</div>
+                <div class="sub-item">Nhân viên tự cập nhật</div>
+            </div>
+
+            <div class="item" title="Lương - Thuế - Bảo hiểm">
+                <div class="left-icon" id="salary-tax-insurance"></div>
+                <div class="item-name up-down-arrow">Lương - Thuế - Bảo hiểm</div>
+            </div>
+            <div class="sub-item-hide" id="salary-div">
+                <div class="sub-item arrow-right" id="time-management">Quản lý thời gian</div>
+                <div class="sub-item arrow-right" id="work-evaluate">Chấm công</div>
+                <div class="sub-item arrow-right" id="salary">Lương</div>
+                <div class="sub-item arrow-right" id="tax">Thuế</div>
+                <div class="sub-item arrow-right" id="insurance">Bảo hiểm</div>
+            </div>
+
+            <div class="item" title="Tuyển dụng - Tiếp nhận">
+                <div class="left-icon" id="recruit"></div>
+                <div class="item-name up-down-arrow">Tuyển dụng - Tiếp nhận</div>
+            </div>
+            <div class="sub-item-hide" id="recruit-div">
+                <div class="sub-item arrow-right" id="recruitment">Tuyển dụng</div>
+                <div class="sub-item">Tiếp nhận</div>
+            </div>
+
+            <div class="item" title="Khen thưởng - Sự cố">
+                <div class="left-icon" id="accident"></div>
+                <div class="item-name up-down-arrow">Khen thưởng - Sự cố</div>
+            </div>
+            <div class="sub-item-hide" id="accident-div">
+                <div class="sub-item">Khen thưởng</div>
+                <div class="sub-item">Sự cố</div>
+            </div>
+
+            <div class="item" title="Đánh giá - Đào tạo - Phúc lợi">
+                <div class="left-icon" id="assessment"></div>
+                <div class="item-name up-down-arrow">Đánh giá - Đào tạo - Phúc lợi</div>
+            </div>
+            <div class="sub-item-hide" id="assessment-div">
+                <div class="sub-item">Đánh giá</div>
+                <div class="sub-item arrow-right" id="educate">Đào tạo</div>
+                <div class="sub-item">Phúc lợi</div>
+            </div>
+
+            <div class="item" title="Thủ tục">
+                <div class="left-icon" id="procedure"></div>
+                <div class="item-name up-down-arrow">Thủ tục</div>
+            </div>
+            <div class="sub-item-hide" id="procedure-div">
+                <div class="sub-item">Công tác</div>
+                <div class="sub-item">Đồng phục &Aacute; bảo hộ</div>
+                <div class="sub-item">Thôi việc</div>
+            </div>
+
+            <div class="item arrow-right big-sub-button" title="Báo cáo" id="report-button">
+                <div class="left-icon" id="report"></div>
+                <div class="item-name">Báo cáo</div>
+            </div>
+            <div class="item arrow-right big-sub-button" title="Danh mục" id="cate">
+                <div class="left-icon" id="category"></div>
+                <div class="item-name">Danh mục</div>
+            </div>
+            <div class="item arrow-right" title="Hệ thống" id="system-button">
+                <div class="left-icon" id="system"></div>
+                <div class="item-name">Hệ thống</div>
+            </div>
+
+            <div class="item" title="Danh bạ">
+                <div class="left-icon" id="phonebook"></div>
+                <div class="item-name">Danh bạ</div>
+            </div>
+            <div class="item" title="Báo cáo nhanh">
+                <div class="left-icon" id="quick-report"></div>
+                <div class="item-name">Báo cáo nhanh</div>
+            </div>
+            <div class="item" title="Thùng rác">
+                <div class="left-icon" id="trash-bin"></div>
+                <div class="item-name">Thùng rác</div>
+            </div>
+
+            <div class="item" title="Tiện ích">
+                <div class="left-icon" id="utilities"></div>
+                <div class="item-name up-down-arrow">Tiện ích</div>
+            </div>
+            <div class="sub-item-hide" id="utilities-div">
+                <div class="sub-item">Lịch sử email</div>
             </div>
         </div>
+
+        <div class="sub-nav upper-layout" id="time-management-sub-menu">
+            <div class="sub-menu-item">Quản lý nghỉ</div>
+            <div class="sub-menu-item">Quản lý làm thêm</div>
+            <div class="sub-menu-item">Quản lý đi muộn, về sớm</div>
+            <div class="sub-menu-item">Quản lý làm bù</div>
+            <div class="sub-menu-item">Bảng tổng hợp nghỉ phép</div>
+        </div>
+        <div class="sub-nav upper-layout" id="work-evaluate-sub-menu">
+            <div class="sub-menu-item">Chấm công chi tiết theo thời gian</div>
+            <div class="sub-menu-item">Chấm công tổng hợp theo thời gian</div>
+        </div>
+        <div class="sub-nav upper-layout" id="salary-sub-menu">
+            <div class="sub-menu-item">Bảng lương</div>
+            <div class="sub-menu-item">Bảng tổng hợp công nợ</div>
+            <div class="sub-menu-item">Bảng chi trả tiền lương</div>
+            <div class="sub-menu-item">Bảng tạm ghi nợ nhân viên</div>
+            <div class="sub-menu-item">Bảng tổng hợp ghi nợ nhân viên</div>
+            <div class="sub-menu-item">Bảng thu nhập khác</div>
+            <div class="sub-menu-item">Bảng khấu trừ khác</div>
+        </div>
+        <div class="sub-nav upper-layout" id="tax-sub-menu">
+            <div class="sub-menu-item">Tạm tính thuế</div>
+            <div class="sub-menu-item">Quyết toán thuế</div>
+            <div class="sub-menu-item">Tờ khai quyết toán thuế</div>
+            <div class="sub-menu-item">Tờ khai đăng kí mã số thuế TNCN</div>
+            <div class="sub-menu-item">Bảng kê đăng kí người phụ thuộc giảm trừ gia cảnh</div>
+        </div>
+        <div class="sub-nav upper-layout" id="insurance-sub-menu">
+            <div class="sub-menu-item">Đợt bảo hiểm</div>
+            <div class="sub-menu-item">Thanh toán bảo hiểm</div>
+            <div class="sub-menu-item">Hồ sơ bảo hiểm</div>
+        </div>
+        <div class="sub-nav upper-layout" id="recruitment-sub-menu">
+            <div class="sub-menu-item">Kế hoạch tuyển dụng</div>
+            <div class="sub-menu-item">Đợt tuyển dụng</div>
+            <div class="sub-menu-item">Nguồn dự trữ</div>
+            <div class="sub-menu-item">Hồ sơ vãng lai</div>
+        </div>
+        <div class="sub-nav upper-layout" id="educate-sub-menu">
+            <div class="sub-menu-item">Tổng hợp nhu cầu đào tạo</div>
+            <div class="sub-menu-item">Kế hoạch đào tạo</div>
+            <div class="sub-menu-item">Khoá đào tạo</div>
+        </div>
+
+
+        <!-- category -->
+        <div class="category big-sub upper-layout" id="report-button-sub-menu">
+            <table>
+                <colgroup>
+                    <col class="column1" />
+                    <col class="column2" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="column1"></th>
+                        <th class="column2">Hồ sơ nhân viên</th>
+                        <th class="column1"></th>
+                        <th class="column2">Khen thưởng - Sự cố</th>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Hồ sơ</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Khen thưởng</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Hợp đồng</div></td>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Sự cố</div></td>
+                    </tr>
+
+                    <tr>
+                        <th class="column1"></th>
+                        <th class="column2">Lương - Thuế - Bảo hiểm</th>
+                        <th class="column1"></th>
+                        <th class="column2">Đánh giá - Đào tạo - phúc lợi</th>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Quản lý thời gian</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Đánh giá</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Chấm công</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Đào tạo</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Tiền lương</div></td>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Phúc lợi</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Thuế</div></td>
+                        <td class="column1"></td>
+                        <th class="column2"><div>Thủ tục</div></th>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Bảo hiểm</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Công tác</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <th class="column2"><div>Tuyển dụng - Tiếp nhận</div></th>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Đồng phục và bảo hộ lao động</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Tuyển dụng</div></td>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Thôi việc</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Tiếp nhận</div></td>
+                        <td class="column1"></td>
+                        <th class="column2"><div>Hồ sơ năng lực</div></th>
+                    </tr>
+                    <tr>
+                        <td class="column1"></td>
+                        <th class="column2"><div></div></th>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Hồ sơ năng lực</div></td>
+                    </tr>
+
+
+                </thead>
+            </table>
+        </div>
+
+        <div class="category big-sub upper-layout" id="cate-sub-menu">
+            <table>
+                <colgroup>
+                    <col class="column1" />
+                    <col class="column2" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="column1"></th>
+                        <th class="column2">Công việc</th>
+                        <th class="column1"></th>
+                        <th class="column2">Khác</th>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Cơ cấu tổ chức</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Nhà cung cấp</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Vị trí công việc</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Đồng phục và bảo hộ lao động</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Vai trò công việc</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Cấp độ</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1"></td>
+                        <th class="column2"><div>Lương</div></th>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Kỹ năng</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Khoản lương</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Tiêu chí đánh giá</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Lý do nghỉ</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Thủ tục</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Ký hiệu chấm công</div></td>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Nơi đăng ký khám chữa bệnh</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Ca làm việc</div></td>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Thiết lập mẫu trộn</div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Sản phẩm</div></td>
+                        <td class="column1"></td>
+                        <td class="column2"><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Ngạch bậc lương</div></td>
+                        <td class="column1"></td>
+                        <td class="column2"><div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">
+                            <div class="vertical-line-end"></div>
+                            <div class="horizontal-line"></div>
+                        </td>
+                        <td class="column2"><div>Biểu tính thuế thu nhập</div></td>
+                        <td class="column1"></td>
+                        <td class="column2"><div></div></td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="sub-nav upper-layout" id="system-button-sub-menu">
+            <div class="language-content">
+                <div class="system-language full-line">Ngôn ngữ</div>
+                <div class="lan-box">
+                    <div class="lan-left">Tiếng Việt</div>
+                    <div class="down-arrow">&#129171;</div>
+                </div>
+            </div>
+            <div class="system-item full-line">Quản lý người dùng</div>
+            <div class="system-item full-line">Vai trò quyền hạn</div>
+            <div class="system-item full-line">Nhật ký truy cập</div>
+            <div class="system-item full-line">Thiết lập giá trị ngầm định</div>
+            <div class="general-setting">
+                <div class="full-line">Thiết lập chung</div>
+                <div class="system-item full-line marked-left">Chọn người dùng quản lý thời gian</div>
+                <div class="system-item full-line marked-left">Thiết lập ca làm việc</div>
+                <div class="system-item full-line marked-left">Thiết lập ngày nghỉ</div>
+                <div class="system-item full-line marked-left">Thiết lập số công chuẩn</div>
+                <div class="system-item full-line marked-left">Thiết lập số kỳ lương trong tháng</div>
+                <div class="system-item full-line marked-last">Chọn người dùng quản lý đi công tác</div>
+            </div>
+            <div class="system-item full-line">Thiết lập trường bắt buộc nhập liệu...</div>
+            <div class="system-item full-line">Tuỳ chọn...</div>
+        </div>
+    </div>
+
+    <!--MAIN CONTENT-->
+    <div class="my-content lower-layout">
         <div class="content-wrap">
             <div class="content">
-                <div class="content-left-wrap">
-                    <div class="content-left">
-                        <div class="content-left-exten" click="active">
-                            <div class="content-left-exten-icon-1">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Tổng quan
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click-report="display" click="active">
-                            <div class="content-left-exten-icon-2">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Báo cáo
-                            </div>
-                            <div class="content-left-exten-icon-left-icon-2">
-                            </div>
-                        </div>
-                        <div class="content-left-exten-more">
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Bán hàng
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Mua hàng
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Kho
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Công nợ
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Quỹ tiền
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Lợi nhuận
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click="active">
-                            <div class="content-left-exten-icon-8">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Khuyến mại
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click="active" id="danhmuc">
-                            <div class="content-left-exten-icon-11">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Danh mục
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click="active">
-                            <div class="content-left-exten-icon-12">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Thiết lập hệ thống
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click-report="display" click="active">
-                            <div class="content-left-exten-icon-13">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Trợ giúp
-                            </div>
-                            <div class="content-left-exten-icon-left-icon-13">
-                            </div>
-                        </div>
-                        <div class="content-left-exten-more">
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Nội dung trợ giúp
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Thỏa thuận sử dụng dịch vụ
-                                </div>
-                            </div>
-                            <div class="content-left-exten" click="active">
-                                <div class="content-left-exten-icon">
-                                </div>
-                                <div class="content-left-exten-content">
-                                    Thông tin sản phẩm
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click="active">
-                            <div class="content-left-exten-icon-14">
-                            </div>
-                            <div class="content-left-exten-content">
-                                Thuê bao
-                            </div>
-                        </div>
-                        <div class="content-left-exten" click="active">
-                            <div class="content-left-exten-icon-15">
-                            </div>
-                            <div class="content-left-exten-content">
-                                5Food
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-left-sub">
-                    <div class="content-left-sub-left">
-                        <div class="content-left-sub-left-top">
-                            <div class="sub-menu">
-                                <div class="sub-menu-thucdon">
-                                    <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/InventoryItem.png" alt="">
-                                </div>
-                                <div class="sub-menu-content">
-                                    THỰC ĐƠN
-                                </div>
-                            </div>
-                            <div class="sub-content">
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Thực đơn</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhóm thực đơn</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Sở thích phục vụ</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhóm sở thích phục vụ</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content-left-sub-left-bottom">
-                            <div class="sub-menu">
-                                <div class="sub-menu-thucdon">
-                                    <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/CustomerVendorEmployee.png"
-                                         alt="">
-                                </div>
-                                <div class="sub-menu-content">
-                                    KH, NCC, NHÂN VIÊN
-                                </div>
-                            </div>
-                            <div class="sub-content">
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhân viên</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon" id="btn-customer">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Khách hàng</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhóm khách hàng</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhà cung cấp</span>
-                                    </div>
-                                </div>
-                                <div class="sub-content-thucdon">
-                                    <div class="trangtri">
-                                        <div class="border-left">
-                                        </div>
-                                        <div class="border-right">
-                                        </div>
-                                    </div>
-                                    <div class="thucdon">
-                                        <span class="thucdon-details">Nhóm nhà cung cấp</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-left-sub-right">
-                        <div class="content-left-sub-left">
-                            <div class="content-left-sub-left-top">
-                                <div class="sub-menu">
-                                    <div class="sub-menu-thucdon">
-                                        <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/InventoryItemMaterial.png"
-                                             alt="">
-                                    </div>
-                                    <div class="sub-menu-content">
-                                        NGUYÊN VẬT LIỆU
-                                    </div>
-                                </div>
-                                <div class="sub-content">
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Nguyên vật liệu</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Nhóm nguyên vật liệu</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Kho</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Đơn vị tính</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content-left-sub-left-bottom">
-                                <div class="sub-menu">
-                                    <div class="sub-menu-thucdon">
-                                        <img src="https://cdn2.cukcuk.vn/QLNH/resources/Image/menu/OtherDictionary.png"
-                                             alt="">
-                                    </div>
-                                    <div class="sub-menu-content">
-                                        KHÁC
-                                    </div>
-                                </div>
-                                <div class="sub-content">
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Ca làm việc</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Két đựng tiền</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Bếp/Bar</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Lý do hủy món</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Lý do hủy order</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Mục thu/chi</span>
-                                        </div>
-                                    </div>
-                                    <div class="sub-content-thucdon">
-                                        <div class="trangtri">
-                                            <div class="border-left">
-                                            </div>
-                                            <div class="border-right">
-                                            </div>
-                                        </div>
-                                        <div class="thucdon">
-                                            <span class="thucdon-details">Thẻ ngân hàng/ví điện tử</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="content-add">
                     <div id="profile-add" class="profile-add">
                         <div class="profile-add-inner">
@@ -542,7 +572,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="pa-col pa-col-common pa-flex">
-                                                            <form id="add-form-id"">
+                                                            <form id="add-form-id" ">
                                                                 <div class="pa-row">
                                                                     <div class="pa-col pa-flex pa-left-content">
                                                                         <div class="pa-row">
@@ -1019,14 +1049,16 @@
             <div class="popup-blur-content">
             </div>
         </div>
-        <script src="Scripts/jquery-3.3.1.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="Scripts/js1.js"></script>
-        <script src="Scripts/request.js"></script>
-        <script>
-            $(function () {
-                $("#draggable").draggable();
-            })
-        </script>
+    </div>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Scripts/js1.js"></script>
+    <script src="Scripts/request.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
 </body>
 </html>
