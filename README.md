@@ -65,6 +65,6 @@ I assume that you have installed SQL Server Management Studio (SSMS)
 
 3/run
 
-	-Open "Khách hàng" tab as shown in Giang's instruction
+	-To open employee table, on the sidebar, choose "Hồ sơ nhân viên" and click on "Hồ sơ"
 
 	-To add new employee, click "Thêm", fill in information, then click "Cắt" to save
