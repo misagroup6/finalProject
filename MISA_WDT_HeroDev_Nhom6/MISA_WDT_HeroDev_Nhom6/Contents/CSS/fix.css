@@ -18,3 +18,22 @@
 .selected {
     background-color: #42b3f4 !important;
 }
+
+.loading-layer{
+    z-index: 10;
+    opacity: 0.3;
+    background-color: grey;
+    display: none;
+}
+
+.loading-gif {
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 26px);
+    height: 52px;
+    width: 52px;
+    background-image: url('../Images/Facebook-0.8s-52px.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+}
