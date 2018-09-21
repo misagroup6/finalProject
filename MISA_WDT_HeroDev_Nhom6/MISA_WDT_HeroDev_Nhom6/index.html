@@ -572,179 +572,178 @@
                                                             </div>
                                                         </div>
                                                         <div class="pa-col pa-col-common pa-flex">
-                                                            <form id="add-form-id">
-                                                                <div class="pa-row">
-                                                                    <div class="pa-col pa-flex pa-left-content">
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Mã nhân viên
-                                                                                    <span class="pa-lbl-require">(*)</span>
-                                                                                </span>
+                                                            <form id="add-form-id"></form>
+                                                            <div class="pa-row">
+                                                                <div class="pa-col pa-flex pa-left-content">
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Mã nhân viên
+                                                                                <span class="pa-lbl-require">(*)</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input requiredInput='true' type="text" name="MaNhanVien" value="" form="add-form-id"/>
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input requiredInput='true' type="text" name="MaNhanVien" value="" />
-                                                                                </div>
+                                                                        </div>
+                                                                    </div>      <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Họ và đệm
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input type="text" name="HoVaDem" value="" form="add-form-id"/>
                                                                             </div>
-                                                                        </div>      <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Họ và đệm
-                                                                                </span>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Tên
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input type="text" name="Ten" value="" form="add-form-id"/>
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input type="text" name="HoVaDem" value="" />
-                                                                                </div>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Họ và tên
+                                                                                <span class="pa-lbl-require">(*)</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input requiredInput='true' type="text" name="HoVaTen" value="" form="add-form-id"/>
                                                                             </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Tên
-                                                                                </span>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Giới tính
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <!--<input style="width: 90%;" class="pull-left" type="text" name="GioiTinh" value="" form="add-form-id"/>-->
+                                                                                <!--<form>-->
+                                                                                    <select class="pa-select pull-left" style="width: 100%;" name="GioiTinh" form="add-form-id">
+                                                                                        <option value="Nam">Nam</option>
+                                                                                        <option value="Nữ">Nữ</option>
+                                                                                    </select>
+                                                                                <!--</form>-->
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input type="text" name="Ten" value="" />
-                                                                                </div>
+                                                                            <!--<div class="pa-form-trigger pa-cbo-trigger"></div>-->
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Ngày sinh
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item pa-form-field-date">
+                                                                                <input style="width: 75%;" class="pull-left" type="date" name="NgaySinh" value="" form="add-form-id"/>
+                                                                                <div class="pa-form-trigger pa-date-trigger"></div>
                                                                             </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Họ và tên
-                                                                                    <span class="pa-lbl-require">(*)</span>
-                                                                                </span>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                </div>  <!--end left content-->
+                                                                <div class="pa-col pa-flex pa-right-content">
+                                                                    <div class="pa-row" style="height:72px;">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Địa chỉ
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <textarea name="DiaChi" style="width: 100%;height: 100%;border-radius: 3px;border-color: #d9d9d9;border-width: 1px;border-style: solid;overflow: hidden;padding: 4px 6px;line-height: 17px;"></textarea>
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input requiredInput='true' type="text" name="HoVaTen" value="" />
-                                                                                </div>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Điện thoại
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input id="number-valid" type="text" name="DienThoai" value="" form="add-form-id"/>
                                                                             </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Giới tính
-                                                                                </span>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Email
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <input id="email-valid" type="text" name="Email" value="" form="add-form-id"/>
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input style="width: 90%;" class="pull-left" type="text" name="GioiTinh" value="" />
-                                                                                    <!--<form>
-                                                                                        <select class="pa-select" style="width: 100%;" class="pull-left" name="gender">
-                                                                                            <option value="male">Nam</option>
-                                                                                            <option value="female">Nữ</option>
-                                                                                        </select>
-                                                                                    </form>-->
-                                                                                </div>
-                                                                                <div class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Vị trí công việc
+                                                                                <span class="pa-lbl-require">(*)</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <!--<form>-->
+                                                                                    <select requiredInput='true' class="pa-select pull-left" style="width: 92%;" name="ViTriCongViec" form="add-form-id">
+                                                                                        <option value="Giám đốc">NV001 - Giám đốc</option>
+                                                                                        <option value="Trưởng phòng">NV002 - Trưởng phòng</option>
+                                                                                        <option value="Nhân viên Hành chính">NV003 - Nhân viên Hành chính</option>
+                                                                                        <option value="Nhân viên PTPM">NV004 - Nhân viên PTPM</option>
+                                                                                        <option value="Nhân viên">NV005 - Nhân viên</option>
+                                                                                        <option value="Trưởng phòng Hành chính Tổng hợp">VT000001 - Trưởng phòng Hành chính Tổng hợp</option>
+                                                                                    </select>
+                                                                                <!--</form>-->
+                                                                                <!--<input requiredInput='true' style="float:left;width: 82%;" type="text" name="ViTriCongViec" value="" form="add-form-id"/>
+                                                                                <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>-->
+                                                                                <a class="pa-form-trigger pa-more-trigger" href="#"></a>
                                                                             </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Ngày sinh
-                                                                                </span>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                    <div class="pa-row">
+                                                                        <div class="pa-col pa-col2">
+                                                                            <span class="pa-label-style">
+                                                                                Đơn vị công tác
+                                                                                <span class="pa-lbl-require">(*)</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pa-col pa-flex">
+                                                                            <div class="pa-form-item">
+                                                                                <!--<form>-->
+                                                                                    <select requiredInput='true' class="pa-select pull-left" style="width: 92%;" name="DonViCongTac" form="add-form-id">
+                                                                                        <option value="Công ty Cổ phần MISA">Công ty Cổ phần MISA</option>
+                                                                                        <option value="Phòng hành chính tổng hợp">Phòng hành chính tổng hợp</option>
+                                                                                        <option value="Trung tâm Phát triển Phần mềm">Trung tâm Phát triển Phần mềm</option>
+                                                                                    </select>
+                                                                                <!--</form>-->
+                                                                                <!--<input requiredInput='true' style="float:left;width: 82%;" type="text" name="DonViCongTac" value="" form="add-form-id"/>
+                                                                                <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>-->
+                                                                                <a class="pa-form-trigger pa-more-trigger" href="#"></a>
                                                                             </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item pa-form-field-date">
-                                                                                    <input style="width: 75%;" class="pull-left" type="date" name="NgaySinh" value="" />
-                                                                                    <div class="pa-form-trigger pa-date-trigger"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                    </div>  <!--end left content-->
-                                                                    <div class="pa-col pa-flex pa-right-content">
-                                                                        <div class="pa-row" style="height:72px;">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Địa chỉ
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <textarea name="DiaChi" style="width: 100%;height: 100%;border-radius: 3px;border-color: #d9d9d9;border-width: 1px;border-style: solid;overflow: hidden;padding: 4px 6px;line-height: 17px;"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Điện thoại
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input id="number-valid" type="text" name="DienThoai" value="" />
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Email
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <input id="email-valid" type="text" name="Email" value="" />
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Vị trí công việc
-                                                                                    <span class="pa-lbl-require">(*)</span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <!--<form>
-                                                                                        <select requiredInput='true' class="pa-select" style="width: 92%;" class="pull-left" name="gender">
-                                                                                            <option value="NV001">NV001 - Giám đốc</option>
-                                                                                            <option value="NV002">NV002 - Trưởng phòng</option>
-                                                                                            <option value="NV003">NV003 - Nhân viên Hành chính</option>
-                                                                                            <option value="NV004">NV004 - Nhân viên PTPM</option>
-                                                                                            <option value="NV005">NV005 - Nhân viên</option>
-                                                                                            <option value="VT000001">VT000001 - Trưởng phòng Hành chính Tổng hợp</option>
-                                                                                        </select>
-                                                                                    </form>-->
-                                                                                    <input requiredInput='true' style="float:left;width: 82%;" type="text" name="ViTriCongViec" value="" />
-                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
-                                                                                    <a class="pa-form-trigger pa-more-trigger" href="#"></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                        <div class="pa-row">
-                                                                            <div class="pa-col pa-col2">
-                                                                                <span class="pa-label-style">
-                                                                                    Đơn vị công tác
-                                                                                    <span class="pa-lbl-require">(*)</span>
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="pa-col pa-flex">
-                                                                                <div class="pa-form-item">
-                                                                                    <!--<form>
-                                                                                        <select requiredInput='true' class="pa-select" style="width: 92%;" class="pull-left" name="gender">
-                                                                                            <option value="MISA">Công ty Cổ phần MISA</option>
-                                                                                            <option value="AdminstratorOffice">Phòng hành chính tổng hợp</option>
-                                                                                            <option value="SoftwareDevelopmentCenter">Trung tâm Phát triển Phần mềm</option>
-                                                                                        </select>
-                                                                                    </form>-->
-                                                                                    <input requiredInput='true' style="float:left;width: 82%;" type="text" name="DonViCongTac" value="" />
-                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
-                                                                                    <a class="pa-form-trigger pa-more-trigger" href="#"></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--end one row-->
-                                                                    </div>      <!--end right content-->
-                                                                </div>
-                                                            </form>
+                                                                        </div>
+                                                                    </div> <!--end one row-->
+                                                                </div>      <!--end right content-->
+                                                            </div>
                                                         </div>  <!--end col-->
                                                     </div>
                                                 </div>  <!--end container-->

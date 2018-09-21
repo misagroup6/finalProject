@@ -14,37 +14,56 @@
     }
     $("[requiredInput='true']").blur(function () {
         emptyCheck(this);
-    })
+    });
 
-    //email validate
-    $("#email-valid").blur(function () {
+    //function check email
+    function emailCheck() {
         var email = $("#email-valid").val().trim();
         var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (email === "") {
             $("#email-valid").removeClass("border-red");
             $("#email-valid").removeAttr("title");
+            return true;
         } else if (!regex.test(email)) {
             $("#email-valid").addClass("border-red");
             $("#email-valid").attr("title", "Email không hợp lệ.");
+            return false;
         } else {
             $("#email-valid").removeClass("border-red");
             $("#email-valid").removeAttr("title");
+            return true;
         }
+    }
+
+    //email validate
+    $("#email-valid").blur(function () {
+        emailCheck();
     });
-    //check phone number
-    $("#number-valid").blur(function (key) {
+
+    //function check phone
+    function phoneCheck() {
         var phone = $("#number-valid").val().trim();
         var regex = /^[0-9]+$/;
         if (phone === "") {
-            //do nothing
+            $("#number-valid").removeClass("border-red");
+            $("#number-valid").removeAttr("title");
+            return true;
         } else if (!phone.match(regex)) {
             $("#number-valid").addClass("border-red");
             $("#number-valid").attr("title", "Số điện thoại không hợp lệ.");
+            return false;
         } else {
             $("#number-valid").removeClass("border-red");
             $("#number-valid").removeAttr("title");
+            return true;
         }
+    }
+
+    //check phone number
+    $("#number-valid").blur(function (key) {
+        phoneCheck();
     });
+
     //ajax
     $('#btn-customer').click(function () {
         $.ajax({
@@ -113,14 +132,25 @@
 
     //click cắt
     $("#save-btn").click(function () {
-        //validate input
-        var inputCheckRequired = $("[requiredInput='true']");	//get all the element containing this attr
         var checkOK = true;
+
+        //check required empty
+        var inputCheckRequired = $("[requiredInput='true']");	//get all the element containing this attr        
         $.each(inputCheckRequired, function (index, item) {
             var status = emptyCheck(item);
             if (!status)
                 checkOK = false;
         });
+
+        //check email
+        if (!emailCheck()) {
+            checkOK = false;
+        }
+
+        //check phone
+        if (!phoneCheck()) {
+            checkOK = false;
+        }
 
         //if input OK then save
         if (checkOK) {
@@ -144,6 +174,10 @@
                     }
                 }
             });
+        }
+        //else show error
+        else {
+            alert("Thông tin nhập không hợp lệ. Vui lòng kiểm tra!");
         }
     });
 
