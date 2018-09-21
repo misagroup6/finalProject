@@ -128,6 +128,11 @@
         });
     });
 
+    $(document).on({
+        ajaxStart: function () { $(".loading-layer").show(); },
+        ajaxStop: function () { $(".loading-layer").hide(); }
+    });
+
     //show table immediately after page loaded
     //$('#btn-customer').click();
 });
