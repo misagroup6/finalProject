@@ -546,6 +546,19 @@ a {
     color: #1d2129;
 }
 /*---------------------TOOLBAR---------------------------------*/
+.border-red {
+    border: 1px solid red !important;
+}
+.pa-select {
+    font-size: 13px;
+    font-family: Helvetica,Tahoma,Arial,sans-serif !important;
+    color: #1d2129;
+    height: 100% !important;
+    padding: 0 6px;
+    min-height: 28px;
+    width: 100%;
+    border: none;
+}
 .pa-toolbar {
     width: 100%;
     min-width: 1024px;

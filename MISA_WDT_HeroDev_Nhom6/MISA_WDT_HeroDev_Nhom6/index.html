@@ -584,7 +584,7 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input type="text" name="MaNhanVien" value="" />
+                                                                                    <input requiredInput='true' type="text" name="MaNhanVien" value="" />
                                                                                 </div>
                                                                             </div>
                                                                         </div>      <!--end one row-->
@@ -621,7 +621,7 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input type="text" name="HoVaTen" value="" />
+                                                                                    <input requiredInput='true' type="text" name="HoVaTen" value="" />
                                                                                 </div>
                                                                             </div>
                                                                         </div> <!--end one row-->
@@ -633,9 +633,15 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input style="width: 90%;" class="pull-left" type="text" name="GioiTinh" value="" />
+                                                                                    <!--<input style="width: 90%;" class="pull-left" type="text" name="GioiTinh" value="" />-->
+                                                                                    <form>
+                                                                                        <select class="pa-select" style="width: 100%;" class="pull-left" name="gender">
+                                                                                            <option value="male">Nam</option>
+                                                                                            <option value="female">Nữ</option>
+                                                                                        </select>
+                                                                                    </form>
                                                                                 </div>
-                                                                                <div class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                <!--<div class="pa-form-trigger pa-cbo-trigger"></div>-->
                                                                             </div>
                                                                         </div> <!--end one row-->
                                                                         <div class="pa-row">
@@ -673,7 +679,7 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input type="text" name="DienThoai" value="" />
+                                                                                    <input id="number-valid" type="text" name="DienThoai" value="" />
                                                                                 </div>
                                                                             </div>
                                                                         </div> <!--end one row-->
@@ -685,7 +691,7 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input type="text" name="Email" value="" />
+                                                                                    <input id="email-valid" type="text" name="Email" value="" />
                                                                                 </div>
                                                                             </div>
                                                                         </div> <!--end one row-->
@@ -698,8 +704,18 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input style="float:left;width: 82%;" type="text" name="ViTriCongViec" value="" />
-                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                    <form>
+                                                                                        <select requiredInput='true' class="pa-select" style="width: 92%;" class="pull-left" name="gender">
+                                                                                            <option value="NV001">NV001 - Giám đốc</option>
+                                                                                            <option value="NV002">NV002 - Trưởng phòng</option>
+                                                                                            <option value="NV003">NV003 - Nhân viên Hành chính</option>
+                                                                                            <option value="NV004">NV004 - Nhân viên PTPM</option>
+                                                                                            <option value="NV005">NV005 - Nhân viên</option>
+                                                                                            <option value="VT000001">VT000001 - Trưởng phòng Hành chính Tổng hợp</option>
+                                                                                        </select>
+                                                                                    </form>
+                                                                                    <!--<input requiredInput='true' style="float:left;width: 82%;" type="text" name="ViTriCongViec" value="" />
+                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>-->
                                                                                     <a class="pa-form-trigger pa-more-trigger" href="#"></a>
                                                                                 </div>
                                                                             </div>
@@ -713,8 +729,15 @@
                                                                             </div>
                                                                             <div class="pa-col pa-flex">
                                                                                 <div class="pa-form-item">
-                                                                                    <input style="float:left;width: 82%;" type="text" name="DonViCongTac" value="" />
-                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>
+                                                                                    <form>
+                                                                                        <select requiredInput='true' class="pa-select" style="width: 92%;" class="pull-left" name="gender">
+                                                                                            <option value="MISA">Công ty Cổ phần MISA</option>
+                                                                                            <option value="AdminstratorOffice">Phòng hành chính tổng hợp</option>
+                                                                                            <option value="SoftwareDevelopmentCenter">Trung tâm Phát triển Phần mềm</option>
+                                                                                        </select>
+                                                                                    </form>
+                                                                                    <!--<input requiredInput='true' style="float:left;width: 82%;" type="text" name="DonViCongTac" value="" />
+                                                                                    <div style="margin-right: 32px;" class="pa-form-trigger pa-cbo-trigger"></div>-->
                                                                                     <a class="pa-form-trigger pa-more-trigger" href="#"></a>
                                                                                 </div>
                                                                             </div>

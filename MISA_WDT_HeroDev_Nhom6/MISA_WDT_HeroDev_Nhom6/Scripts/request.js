@@ -1,4 +1,55 @@
 ﻿$(document).ready(function () {
+    //check empty
+    function emptyCheck(input) {
+        var currentInput = $(input);
+        if ($(currentInput).val().trim() === "") {
+            $(currentInput).addClass('border-red');
+            $(currentInput).attr("title", 'Trường này không được để trống.');
+        } else {
+            $(currentInput).removeClass('border-red');
+            $(currentInput).attr("title", '');
+        }
+    }
+    $("[requiredInput='true']").blur(function () {
+        emptyCheck(this);
+    })
+    //cut button checking
+    $('#pa-btnCut').click(function () {
+        var inputCheckRequired = $("[requiredInput='true']");	//get all the element containing this attr
+        $.each(inputCheckRequired, function (index, item) {
+            emptyCheck(item);
+        })
+    })
+    //email validate
+    $("#email-valid").blur(function () {
+        var email = $("#email-valid").val().trim();
+        var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (email === "") {
+            $("#email-valid").removeClass("border-red");
+            $("#email-valid").removeAttr("title");
+        } else if (!regex.test(email)) {
+            $("#email-valid").addClass("border-red");
+            $("#email-valid").attr("title", "Email không hợp lệ.");
+        } else {
+            $("#email-valid").removeClass("border-red");
+            $("#email-valid").removeAttr("title");
+        }
+    });
+    //check phone number
+    $("#number-valid").blur(function (key) {
+        var phone = $("#number-valid").val().trim();
+        var regex = /^[0-9]+$/;
+        if (phone === "") {
+            //do nothing
+        } else if (!phone.match(regex)) {
+            $("#number-valid").addClass("border-red");
+            $("#number-valid").attr("title", "Số điện thoại không hợp lệ.");
+        } else {
+            $("#number-valid").removeClass("border-red");
+            $("#number-valid").removeAttr("title");
+        }
+    });
+    //ajax
     $('#btn-customer').click(function () {
         $.ajax({
             url: "api/employees",
