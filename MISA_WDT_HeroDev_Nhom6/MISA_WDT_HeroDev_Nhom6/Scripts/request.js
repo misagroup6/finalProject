@@ -5,21 +5,17 @@
         if ($(currentInput).val().trim() === "") {
             $(currentInput).addClass('border-red');
             $(currentInput).attr("title", 'Trường này không được để trống.');
+            return false;
         } else {
             $(currentInput).removeClass('border-red');
             $(currentInput).attr("title", '');
+            return true;
         }
     }
     $("[requiredInput='true']").blur(function () {
         emptyCheck(this);
     })
-    //cut button checking
-    $('#pa-btnCut').click(function () {
-        var inputCheckRequired = $("[requiredInput='true']");	//get all the element containing this attr
-        $.each(inputCheckRequired, function (index, item) {
-            emptyCheck(item);
-        })
-    })
+
     //email validate
     $("#email-valid").blur(function () {
         var email = $("#email-valid").val().trim();
@@ -110,34 +106,48 @@
         });
     });
 
+    //click tải
     $("#btn-load").click(function () {
         $("#btn-customer").click();
     });
 
+    //click cắt
     $("#save-btn").click(function () {
-        $.ajax({
-            url: 'api/employees',
-            type: 'POST',
-            data: $('#add-form-id').serialize(),
-
-            success: function (data, textStatus, xhr) {
-                alert("Thêm thành công mã nhân viên " + data.MaNhanVien + "");
-                $("#pa-closeAddContent").click();
-                $("#btn-customer").click();
-            },
-
-            error: function (xhr, textStatus, errorThrown) {
-                if (xhr.status === 409) {
-                    alert("Mã nhân viên này đã tồn tại!");
-                }
-                else {
-                    alert("Lỗi server. Vui lòng thử lại!");
-                }
-            }
+        //validate input
+        var inputCheckRequired = $("[requiredInput='true']");	//get all the element containing this attr
+        var checkOK = true;
+        $.each(inputCheckRequired, function (index, item) {
+            var status = emptyCheck(item);
+            if (!status)
+                checkOK = false;
         });
+
+        //if input OK then save
+        if (checkOK) {
+            $.ajax({
+                url: 'api/employees',
+                type: 'POST',
+                data: $('#add-form-id').serialize(),
+
+                success: function (data, textStatus, xhr) {
+                    alert("Thêm thành công mã nhân viên " + data.MaNhanVien + "");
+                    $("#pa-closeAddContent").click();
+                    $("#btn-customer").click();
+                },
+
+                error: function (xhr, textStatus, errorThrown) {
+                    if (xhr.status === 409) {
+                        alert("Mã nhân viên này đã tồn tại!");
+                    }
+                    else {
+                        alert("Lỗi server. Vui lòng thử lại!");
+                    }
+                }
+            });
+        }
     });
 
-
+    //highlight and bind data when table row clicked
     $('.my-index-table-body').on("click", "tr", function (e) {
         $(this).siblings().removeClass("selected");
         $(this).addClass("selected");
